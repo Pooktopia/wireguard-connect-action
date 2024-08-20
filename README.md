@@ -1,4 +1,4 @@
-# Easy WireGuard Connection
+# WireGuard Connection
 
 This GitHub Action simplifies the setup of a WireGuard connection using `wg-quick`. It only requires a WireGuard configuration file as input to get your connection up and running quickly. No more multiple input variables or complex setup!
 
@@ -22,7 +22,7 @@ jobs:
       uses: actions/checkout@v4
 
     - name: Set up WireGuard Connection
-      uses: niklaskeerl/easy-wireguard-action@v2
+      uses: pooktopia/wireguard-connect-action@v1
       with:
         WG_CONFIG_FILE: ${{ secrets.WG_CONFIG_FILE }}
 ```
